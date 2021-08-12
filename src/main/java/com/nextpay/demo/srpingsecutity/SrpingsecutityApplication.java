@@ -40,7 +40,7 @@ public class SrpingsecutityApplication implements CommandLineRunner {
         role.setName("ROLE_ADMIN");
         roleRepository.save(role);
         Set<Role> roleSet = new HashSet<>(0);
-        user.setRoles(new HashSet<>(roleSet));
+        user.setRoles(roleSet);
         userRepository.save(user);
     }
 }
